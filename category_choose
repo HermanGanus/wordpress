@@ -1,0 +1,8 @@
+      <?php 
+      $getcat = get_the_category();
+      $cat = $getcat[0]->cat_ID;
+      if ($cat==8) : 
+        get_template_part( 'loop', 'staff' );
+      elseif ($cat==13):
+        get_template_part( 'loop', 'departments' );
+      endif;?>
